@@ -8,6 +8,8 @@ artifact
 demotest.py
 logs/
 artifacts/
+prediction/
+saved_models/
 raw_data
 # Distribution / packaging
 .Python

@@ -26,3 +26,7 @@ TARGET_COLUMN = 'class'
 TRANSFORMER_OBJECT_FILE_NAME = "transformer.pkl"
 TARGET_ENCODER_OBJECT_FILE_NAME = "target_encoder.pkl"
 MODEL_FILE_NAME = "model.pkl"
+
+# Prediction
+PREDICTION_DIR = "prediction"
+INPUT_FILE_PATH_TO_PREDICT = "aps_failure_prediction.csv"
