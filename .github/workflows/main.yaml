@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - deployment
+    paths-ignore:
+      - 'README.md'
 
 permissions:
   id-token: write
@@ -72,7 +74,7 @@ jobs:
 
       - name: Pull docker image
         run: |
-          docker pull ${{secrets.AWS_ECR_LOGIN_URI}}:latest
+          docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
 
       - name: Run Docker Image to serve users
         run: |
